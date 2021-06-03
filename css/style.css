@@ -13,7 +13,7 @@
 1. Base
 -----------------------------------------------*/
 body {
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
 }
 /*-----------------------------------------------
@@ -60,6 +60,66 @@ body {
 }
 .filter-element__p {
   margin: 0 10px;
+}
+
+/* Bloc de recherche
+ *
+ *
+========================== */
+.bloc-formulaire {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  
+  overflow: hidden;
+  height: 35px;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+
+.form-icon {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  height: 100%;
+
+  background-color: #f2f2f2;
+}
+
+.svg-form {
+  width: 10px;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  width: 85%;
+  height: 100%;
+}
+
+#place {
+  padding-left: 10px;
+  width: 60%;
+
+  border: none;
+}
+
+#btn {
+  
+  
+  width: 40%;
+
+  border: none;
+
+  background-color: #0065fc;
+
+  
+  color: #ffffff;
+}
+
+#btn:hover {
+  cursor: pointer;
 }
 /*-----------------------------------------------
 1. Theme
