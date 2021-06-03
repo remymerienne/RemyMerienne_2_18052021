@@ -66,7 +66,7 @@ body {
  *
  *
 ========================== */
-.bloc-formulaire {
+.search-bloc {
   display: flex;
   align-items: center;
   width: 20%;
@@ -78,7 +78,7 @@ body {
   border-radius: 15px;
 }
 
-.form-icon {
+.search-icon {
   display: flex;
   justify-content: center;
   width: 15%;
@@ -92,28 +92,25 @@ body {
   color: #000000;
 }
 
-.form {
+.search-form {
   display: flex;
   width: 85%;
   height: 100%;
 }
 
-#place {
+.search-form__place {
   padding-left: 10px;
   width: 60%;
 
   border: none;
 }
 
-#btn {
-  
-  
+.search-form__btn {
   width: 40%;
 
   border: none;
 
   background-color: #0065fc;
-
   
   color: #ffffff;
 }
