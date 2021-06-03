@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* This file contains all styles related of the site/application. */
 
 /*-----------------------------------------------
@@ -23,65 +24,40 @@ body {
 3. Module
 -----------------------------------------------*/
 
-/* Bloc filtre
- * (Ok responsive. Reste à renommer les classes 
- * en BEM ou SMACSS)
+/* Filter module
 ========================== */
-
 .filter-bloc {
   display: flex;
   align-items: center;
-
-  /*!!*/
-  border: 3px solid plum;
 }
-
 .filter-bloc__p {
   margin-right: 20px;
 }
-
 .filter-wrap {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
-  /*!!*/
-  border: 1px solid green;
 }
-
 .filter-element {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 20px;
-
-  /*!!*/
-  border: 1px solid red;
-  /*border: 2px solid #f2f2f2;*/
+  border: 2px solid #f2f2f2;
   border-radius: 50px;
 }
-
 .filter-element:hover {
   background-color: #deebff;
-
   cursor: pointer;
 }
-
 .filter-element__icon {
   display: flex;
   justify-content: center;
   height: 35px;
   width: 35px;
-
   border-radius: 50px;
-
   background-color: #deebff;
 }
-
-.svg-filter {
-  color: #0065fc;
-}
-
 .filter-element__p {
   margin: 0 10px;
 }
