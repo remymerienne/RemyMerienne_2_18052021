@@ -35,8 +35,8 @@ body {
 }
 .filter-wrap {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 .filter-element {
   display: flex;
@@ -53,8 +53,8 @@ body {
 .filter-element__icon {
   display: flex;
   justify-content: center;
-  height: 35px;
   width: 35px;
+  height: 35px;
   border-radius: 50px;
   background-color: #deebff;
 }
@@ -62,60 +62,41 @@ body {
   margin: 0 10px;
 }
 
-/* Bloc de recherche
- *
- *
+/* Search module
 ========================== */
 .search-bloc {
   display: flex;
   align-items: center;
   width: 20%;
-  
-  overflow: hidden;
   height: 35px;
-
+  overflow: hidden;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
 }
-
 .search-icon {
   display: flex;
   justify-content: center;
   width: 15%;
   height: 100%;
-
   background-color: #f2f2f2;
 }
-
-.svg-form {
-  width: 10px;
-  color: #000000;
-}
-
 .search-form {
   display: flex;
   width: 85%;
   height: 100%;
 }
-
 .search-form__place {
-  padding-left: 10px;
   width: 60%;
-
+  padding-left: 10px;
   border: none;
 }
-
 .search-form__btn {
   width: 40%;
-
   border: none;
-
   background-color: #0065fc;
-  
   color: #ffffff;
 }
-
-#btn:hover {
+.search-form__btn {
   cursor: pointer;
 }
 /*-----------------------------------------------
