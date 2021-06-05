@@ -13,7 +13,7 @@
 1. Base
 -----------------------------------------------*/
 body {
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
 }
 /*-----------------------------------------------
@@ -35,8 +35,8 @@ body {
 }
 .filter-wrap {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 .filter-element {
   display: flex;
@@ -53,13 +53,51 @@ body {
 .filter-element__icon {
   display: flex;
   justify-content: center;
-  height: 35px;
   width: 35px;
+  height: 35px;
   border-radius: 50px;
   background-color: #deebff;
 }
 .filter-element__p {
   margin: 0 10px;
+}
+
+/* Search module
+========================== */
+.search-bloc {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 35px;
+  overflow: hidden;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+.search-icon {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.search-form {
+  display: flex;
+  width: 85%;
+  height: 100%;
+}
+.search-form__place {
+  width: 60%;
+  padding-left: 10px;
+  border: none;
+}
+.search-form__btn {
+  width: 40%;
+  border: none;
+  background-color: #0065fc;
+  color: #ffffff;
+}
+.search-form__btn {
+  cursor: pointer;
 }
 /*-----------------------------------------------
 1. Theme
