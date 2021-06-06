@@ -9,6 +9,7 @@
    a. Responsive navigation module 
    b. Search module
    c. Filter module
+   d. Information module
 4. Theme
 -----------------------------------------------*/
 
@@ -20,7 +21,7 @@
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 10%;
 }
 /*-----------------------------------------------
 2. Layout
@@ -171,6 +172,25 @@ body {
 }
 .filter-element__p {
   margin: 0 10px;
+}
+
+/* .d Information module
+========================== */
+.information {
+  display: flex;
+  align-items: center;
+}
+.information__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+}
+.information__p {
+  margin-left: 10px;
 }
 
 /*-----------------------------------------------
