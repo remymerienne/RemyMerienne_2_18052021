@@ -6,14 +6,20 @@
 1. Base
 2. Layout
 3. Module
+   a. Responsive navigation module 
+   b. Search module
+   c. Filter module
 4. Theme
 -----------------------------------------------*/
 
 /*-----------------------------------------------
 1. Base
 -----------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  margin: 0 0 0 30px;
+  margin: 0;
   padding: 0;
 }
 /*-----------------------------------------------
@@ -23,46 +29,75 @@ body {
 /*-----------------------------------------------
 3. Module
 -----------------------------------------------*/
-
-/* Filter module
+/* a. Responsive navigation module
 ========================== */
-.filter-bloc {
+.header-top {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
-.filter-bloc__p {
-  margin-right: 20px;
-}
-.filter-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.filter-element {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 20px;
-  border: 2px solid #f2f2f2;
-  border-radius: 50px;
-}
-.filter-element:hover {
-  background-color: #deebff;
-  cursor: pointer;
-}
-.filter-element__icon {
-  display: flex;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-  background-color: #deebff;
-}
-.filter-element__p {
-  margin: 0 10px;
+@media (max-width: 1200px){
+    .header-top {
+      flex-direction: column-reverse;
+    } 
 }
 
-/* Search module
+.svg-desk {
+  width: 20%;
+}
+@media (max-width: 1200px){
+  .svg-desk {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav__link {
+  margin-right: 10px;
+}
+@media (max-width: 1200px){
+  .nav__link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px){
+  .subscribe {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px){
+  .subscribe__link {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 10px;
+  } 
+}
+
+.svg-phone {
+  display: none;
+}
+@media (max-width: 1200px){
+  .svg-phone {
+    display: block;
+    width: 20%;
+    margin-left: 10px;
+  }
+}
+
+/* b. Search module
 ========================== */
 .search-bloc {
   display: flex;
@@ -99,6 +134,45 @@ body {
 .search-form__btn {
   cursor: pointer;
 }
+
+/* c. Filter module
+========================== */
+.filter-bloc {
+  display: flex;
+  align-items: center;
+}
+.filter-bloc__p {
+  margin-right: 20px;
+}
+.filter-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+}
+.filter-element:hover {
+  background-color: #deebff;
+  cursor: pointer;
+}
+.filter-element__icon {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #deebff;
+}
+.filter-element__p {
+  margin: 0 10px;
+}
+
 /*-----------------------------------------------
 1. Theme
 -----------------------------------------------*/
