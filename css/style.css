@@ -1,31 +1,449 @@
 @charset "UTF-8";
-/* This file contains all styles related of the site/application. */
+
+/* This file contains all styles related of the site/application "Resrvia". */
 
 /*-----------------------------------------------
-1. Base
-2. Layout
-3. Module
-4. Theme
+1. Font
+2. Base
+3. Layout
+4. Typography
+5. Module
+   a. Responsive navigation module 
+   b. Search module
+   c. Filter module
+   d. Information module
 -----------------------------------------------*/
 
 /*-----------------------------------------------
-1. Base
+1. Font
 -----------------------------------------------*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/raleway-v19-latin-300.eot');
+  src: local(''),
+       url('../fonts/raleway-v19-latin-300.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-v19-latin-300.woff2') format('woff2'),
+       url('../fonts/raleway-v19-latin-300.woff') format('woff'),
+       url('../fonts/raleway-v19-latin-300.ttf') format('truetype'),
+       url('../fonts/raleway-v19-latin-300.svg#Raleway') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/raleway-v19-latin-regular.eot');
+  src: local(''),
+       url('../fonts/raleway-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-v19-latin-regular.woff2') format('woff2'),
+       url('../fonts/raleway-v19-latin-regular.woff') format('woff'),
+       url('../fonts/raleway-v19-latin-regular.ttf') format('truetype'),
+       url('../fonts/raleway-v19-latin-regular.svg#Raleway') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/raleway-v19-latin-600.eot');
+  src: local(''),
+       url('../fonts/raleway-v19-latin-600.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-v19-latin-600.woff2') format('woff2'),
+       url('../fonts/raleway-v19-latin-600.woff') format('woff'),
+       url('../fonts/raleway-v19-latin-600.ttf') format('truetype'),
+       url('../fonts/raleway-v19-latin-600.svg#Raleway') format('svg');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/raleway-v19-latin-700.eot');
+  src: local(''),
+       url('../fonts/raleway-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/raleway-v19-latin-700.woff2') format('woff2'),
+       url('../fonts/raleway-v19-latin-700.woff') format('woff'),
+       url('../fonts/raleway-v19-latin-700.ttf') format('truetype'),
+       url('../fonts/raleway-v19-latin-700.svg#Raleway') format('svg');
+}
+
+/*-----------------------------------------------
+2. Base
+-----------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
-/*-----------------------------------------------
-2. Layout
------------------------------------------------*/
+
+a {
+  text-decoration: none;
+}
+
+main,
+section,
+footer {
+  display: none;
+}
 
 /*-----------------------------------------------
-3. Module
+3. Layout
 -----------------------------------------------*/
-.svg {
-  width: 30%;
-  margin: auto;
+.l-header {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1920px;
 }
+@media screen and (max-width: 1440px) {
+  .l-header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .l-header {
+    width: 100%;
+  }
+}
+
+.l-title {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 670px) {
+  .l-title,
+  .l-search {
+    width: 90%;
+    margin: 30px auto 0 auto;
+  }
+}
+
 /*-----------------------------------------------
-1. Theme
+4. Typography
+-----------------------------------------------*/
+.l-title h1 {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.l-title h2 {
+  font-size: 16.5px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.svg-blue {
+  fill: #0065fc;
+}
+
+/*-----------------------------------------------
+5. Module
+-----------------------------------------------*/
+/* a. Responsive navigation module
+========================== */
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 550px;
+}
+@media screen and (max-width: 768px) {
+  .header-right {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .header-right {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .nav {
+    width: 100%;
+  }
+}
+
+.nav__link {
+  display: inline-block;
+  width: 50%;/*pas touch*/
+  padding-top: 40px;
+  text-align: center;
+}
+
+.nav__link-a {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+@media screen and (max-width: 670px) {
+  .nav__link-a {
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+  }
+}
+
+.nav__link-b {
+  border-top: 2px solid transparent;
+  color: black;
+}
+@media screen and (max-width: 670px) {
+  .nav__link-b {
+    border-bottom: 2px solid #f2f2f2;
+    color: black;
+  }
+}
+
+.nav__link-b:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+@media screen and (max-width: 670px) {
+  .nav__link-b:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: 2px solid transparent;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .subscribe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.subscribe__link {
+  display: inline-block;
+  margin-left: 13px;
+  padding-top: 42px;
+  color: #0065fc;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .subscribe__link {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .subscribe__link {
+    margin-right: 25px;
+  }
+}
+
+/*--- Logo ---*/
+.svg-phone {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .svg-phone {
+    display: initial;
+    width: 90px;
+    margin-left: 25px;
+    margin-top: 35px;
+  }
+}
+
+.svg-desk {
+  width: 100px;
+  margin-top: 35px;
+}
+@media screen and (max-width: 670px) {
+  .svg-desk {
+    display: none;
+  }
+}
+/*--- Logo end ---*/
+
+/* b. Search module
+========================== */
+.search-bloc {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 418px;
+  height: 45px;
+  overflow: hidden;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+}
+@media screen and (max-width: 670px) {
+  .search-bloc {
+    width: 280px;
+  }
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  width: 52px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.search-form {
+  display: flex;
+  height: 100%;
+}
+
+.search-form__place {
+  width: 235px;
+  padding-left: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+@media screen and (max-width: 670px) {
+  .search-form__place {
+    width: 190px;
+  }
+}
+
+.search-form__btn {
+  width: 130px;
+  border: none;
+  background-color: #0065fc;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 670px) {
+  .search-form__btn {
+    display: none;
+  }
+}
+
+.search-form__btn:hover {
+  font-size: 14px;
+}
+
+.search-form__icon {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .search-form__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0065fc;
+    cursor: pointer;
+  }
+}
+
+/* c. Filter module
+========================== */
+.filter-bloc {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1110px) {
+  .filter-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.filter-bloc p {
+  font-size: 18px;
+}
+
+.filter-bloc__p {
+  margin-right: 35px;
+}
+
+.filter-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 28px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+}
+@media screen and (max-width: 1110px) {
+  .filter-element {
+    margin-bottom: 15px;
+  }
+}
+
+.filter-element:hover {
+  background-color: #deebff;
+  cursor: pointer;
+}
+
+.filter-element__p {
+  margin: 0 21px;
+}
+
+.filter-element__icon {
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #deebff;
+}
+
+/* .d Information module
+========================== */
+.information {
+  display: flex;
+  align-items: baseline;
+  margin-top: 15px;
+}
+
+.information__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+}
+
+.information__p {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+/*-----------------------------------------------
+END
 -----------------------------------------------*/
