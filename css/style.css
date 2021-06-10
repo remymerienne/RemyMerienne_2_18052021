@@ -12,6 +12,7 @@
    b. Search module
    c. Filter module
    d. Information module
+   e. Thumbnail module accommodadtion
 -----------------------------------------------*/
 
 /*-----------------------------------------------
@@ -81,7 +82,8 @@
   font-family: 'Raleway', sans-serif;
 }
 
-body {
+body,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -90,10 +92,12 @@ a {
   text-decoration: none;
 }
 
-main,
-section,
 footer {
   display: none;
+}
+
+img {
+  width: 100%;
 }
 
 /*-----------------------------------------------
@@ -125,6 +129,23 @@ footer {
     width: 90%;
     margin: 30px auto 0 auto;
   }
+}
+
+.l-section-accommodation {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+  padding-left: 10px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.l-section-accommodation__first-line {
+  display: flex;
+}
+
+.l-section-accommodation__second-line {
+  display: flex;
 }
 
 /*-----------------------------------------------
@@ -442,6 +463,41 @@ footer {
 .information__p {
   margin-left: 15px;
   font-size: 16px;
+}
+
+/* e. Thumbnail module accommodadtion
+========================== */
+.thumbnail-bloc {
+  width: 225px;/*photo*/
+  height:185px;
+  margin: 0 10px 20px 15px;
+  box-shadow: 0 0 15px #d4d1d1;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.thumbnail-bloc > h4,
+.thumbnail-bloc > p,
+.thumbnail-bloc > div {
+  margin: 8px 0 0 8px;
+}
+.figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;/*photo*/
+  overflow: hidden;
+}
+.star {
+  display: flex;
+}
+.star__svg {
+  width: 5%;
+}
+.svg-grey {
+  fill: #d4d1d1;
 }
 
 /*-----------------------------------------------
