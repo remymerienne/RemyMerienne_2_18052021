@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Reservia</title>
+  <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,24 +12,30 @@
 
 <body>
   <!-- Header -->
-  <header>
+  <header class="l-header">
     <!-- Navigation-module -->
     <div class="header-top">
-      <img class="svg-desk" src="../image/reservia.svg" alt="">
-      <nav class="nav">
-        <p class="nav__link">Hébergement</p>
-        <p class="nav__link">Activités</p>
-      </nav>
-      <div class="subscribe">
-        <img class="svg-phone" src="../image/reservia.svg" alt="">
-        <p class="subscribe__link">S'inscrire</p>
+      <img class="svg-desk" src="images/reservia.svg" alt="">
+      <div class="header-right">
+        <nav class="nav">
+          <a class="nav__link nav__link-a" href="#accommodation">Hébergement</a>
+          <a class="nav__link nav__link-b" href="#activity">Activités</a>
+        </nav>
+        <div class="subscribe">
+          <img class="svg-phone" src="images/reservia.svg" alt="">
+          <a class="subscribe__link" href="#activity">S'inscrire</a>
+        </div>
       </div>
     </div>
     <!-- Navigation-module END -->
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <h2>En plein centre ville ou en pleine nature</h2>
+    <!-- Title-bloc -->
+    <div class="l-title">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h2>En plein centre ville ou en pleine nature</h2>
+    </div>
+    <!-- Title-bloc END -->
     <!-- Search-bloc -->
-    <div>
+    <div class="l-search">
       <!-- Search-module -->
       <div class="search-bloc">
         <div class="search-icon">
@@ -45,6 +51,16 @@
           <!-- method="post" action="form.php" (include with back-end dev) -->
           <input type="text" class="search-form__place" name="place" placeholder="Ville, Pays">
           <input type="submit" class="search-form__btn" value="Rechercher">
+          <button type="submit" class="search-form__icon" aria-label="Rechercher">
+            <svg viewBox="0 0 512 512" width="15px">
+              <path fill="#f2f2f2" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 
+                44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 
+                92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 
+                0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 
+                128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+              </path>
+            </svg>
+          </button>
         </form>
         <!-- Locality-search-form END -->
       </div>
@@ -56,8 +72,8 @@
           <!-- Filter-Economic -->
           <div class="filter-element">
             <div class="filter-element__icon">
-              <svg viewBox="0 0 640 512" width="20px">
-                <path fill="#0065fc" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 
+              <svg class="svg-blue" viewBox="0 0 640 512" width="20px">
+                <path d="M621.16 54.46C582.37 38.19 543.55 32 504.75 
                   32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 
                   0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 
                   110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 
@@ -78,8 +94,8 @@
           <!-- Filter-Family -->
           <div class="filter-element">
             <div class="filter-element__icon">
-              <svg viewBox="0 0 384 512" width="15px">
-                <path fill="#0065fc" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 
+              <svg class="svg-blue" viewBox="0 0 384 512" width="15px">
+                <path d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 
                   39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 
                   1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 
                   160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 
@@ -94,8 +110,8 @@
           <!-- Filter-Romantic -->
           <div class="filter-element">
             <div class="filter-element__icon">
-              <svg viewBox="0 0 512 512" width="18px">
-                <path fill="#0065fc" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
+              <svg class="svg-blue" viewBox="0 0 512 512" width="18px">
+                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 
                   96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 
                   207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 
                   53-154.3-9.8-207.9z" />
@@ -107,8 +123,8 @@
           <!-- Filter-Animals -->
           <div class="filter-element">
             <div class="filter-element__icon">
-              <svg viewBox="0 0 576 512" width="22px">
-                <path fill="#0065fc" d="M298.06 224L448 277.55V496a16 16 0 01-16 16h-64a16 16 0 
+              <svg class="svg-blue" viewBox="0 0 576 512" width="22px">
+                <path d="M298.06 224L448 277.55V496a16 16 0 01-16 16h-64a16 16 0 
                   01-16-16V384H192v112a16 16 0 01-16 16h-64a16 16 0 01-16-16V282.09C58.84 268.84 32 
                   233.66 32 192a32 32 0 0164 0 32.06 32.06 0 0032 32zM544 112v32a64 64 0 01-64 
                   64h-32v35.58l-128-45.71V48c0-14.25 17.22-21.39 27.31-11.31L374.59 64h53.63c10.91 
@@ -125,8 +141,8 @@
       <!-- Information-module -->
       <div class="information">
         <div class="information__logo">
-          <svg viewBox="0 0 192 512" width="5px">
-            <path fill="#0065fc" d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 
+          <svg class="svg-blue" viewBox="0 0 192 512" width="5px">
+            <path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 
               8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 
               11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 
               0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z" />
