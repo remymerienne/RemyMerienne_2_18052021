@@ -76,7 +76,6 @@
 -----------------------------------------------*/
 *, *:before, *:after {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
 }
 body,
 figure {
@@ -150,6 +149,10 @@ img {
 /*-----------------------------------------------
 4. Typography
 -----------------------------------------------*/
+body,
+input {
+  font-family: 'Raleway', sans-serif;
+}
 .l-title h1 {
   font-size: 22px;
   margin-bottom: 7px;
@@ -159,8 +162,11 @@ img {
   font-weight: 300;
   margin-top: 0;
 }
-.svg-blue {
-  fill: #0065fc;
+.svg-color-blue {
+  color: #0065fc;
+}
+.svg-color-grey {
+  color: #d4d1d1;
 }
 
 /*-----------------------------------------------
@@ -308,6 +314,7 @@ img {
 }
 .search-icon {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 52px;
   height: 100%;
@@ -408,6 +415,7 @@ img {
 }
 .filter-element__icon {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 45px;
   height: 45px;
@@ -464,12 +472,11 @@ img {
 .star {
   display: flex;
 }
-.star__svg {
-  width: 15px;
-  margin-right: 2px;
+.star {
+  display: flex;
 }
-.svg-grey {
-  fill: #d4d1d1;
+.fa-star {
+  margin-right: 2px;
 }
 
 /*-----------------------------------------------
