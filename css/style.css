@@ -103,13 +103,15 @@ img {
 /*-----------------------------------------------
 3. Layout
 -----------------------------------------------*/
-.l-header {
+.l-header,
+.test {
   width: 70%;
   margin: 0 auto;
   max-width: 1920px;
 }
 @media screen and (max-width: 1440px) {
-  .l-header {
+  .l-header,
+  .test {
     width: 90%;
   }
 }
@@ -131,11 +133,16 @@ img {
   }
 }
 
+.test {
+  border: 1px solid green;
+  display: flex;
+}
+
 .l-section-accommodation {
   display: flex;
   flex-direction: column;
-  width: 780px;
-  padding-left: 10px;
+  width: 890px;
+  margin-top: 25px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
@@ -148,6 +155,13 @@ img {
   display: flex;
 }
 
+.rem {
+  width: 450px;
+  height: 580px;
+  margin-left: 35px ;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
 /*-----------------------------------------------
 4. Typography
 -----------------------------------------------*/
@@ -468,9 +482,9 @@ img {
 /* e. Thumbnail module accommodadtion
 ========================== */
 .thumbnail-bloc {
-  width: 225px;/*photo*/
-  height:185px;
-  margin: 0 10px 20px 15px;
+  width: 250px;/*photo*/
+  height:200px;
+  margin: 0 0 30px 35px;
   box-shadow: 0 0 15px #d4d1d1;
   overflow: hidden;
   border: 5px solid #ffffff;
@@ -487,14 +501,15 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;/*photo*/
+  height: 112px;/*photo*/
   overflow: hidden;
 }
 .star {
   display: flex;
 }
 .star__svg {
-  width: 5%;
+  width: 15px;
+  margin-right: 2px;
 }
 .svg-grey {
   fill: #d4d1d1;
