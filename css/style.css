@@ -13,6 +13,7 @@
    c. Filter module
    d. Information module
    e. Thumbnail module accommodadtion
+   f. Thumbnail module popular
 -----------------------------------------------*/
 
 /*-----------------------------------------------
@@ -86,11 +87,10 @@ figure {
 }
 a {
   text-decoration: none;
-}/*
-footer,
-main {
+}
+footer {
   display: none;
-}*/
+}
 
 /*-----------------------------------------------
 3. Layout
@@ -99,6 +99,7 @@ main {
   width: 70%;
   margin: 0 auto;
   max-width: 1920px;
+  border: 1px solid green;
 }
 @media screen and (max-width: 900px) {
   .l-page {
@@ -113,17 +114,18 @@ main {
 /* regroupe section 1 et 2 */
 .test {
   display: flex;
+  border: 2px solid red;
+  margin-top: 20px;
 }
 .l-section-accommodation {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   padding-left: 35px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
 /* revoir selecteur car concerne tous les h3 de section + typo */
-.l-section-accommodation h3 {
+h3 {
   margin-top: 35px;
 }
 .l-section-accommodation > p {
@@ -136,7 +138,14 @@ main {
 .l-section-accommodation__second-line {
   display: flex;
 }
-
+.l-section-popular {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  padding-left: 35px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
 /*-----------------------------------------------
 4. Typography
 -----------------------------------------------*/
@@ -407,7 +416,7 @@ h2 {
 
 /* e. Thumbnail module accommodadtion
 ========================== */
-.thumbnail-bloc {
+.thumbnail-accommodation {
   width: 250px;/*photo*/
   height: 200px;
   margin-right: 35px;
@@ -417,12 +426,12 @@ h2 {
   border-radius: 15px;
   background-color: #ffffff;
 }
-.thumbnail-bloc > h4,
-.thumbnail-bloc > p,
-.thumbnail-bloc > div {
+.thumbnail-accommodation > h4,
+.thumbnail-accommodation > p,
+.thumbnail-accommodation > div {
   margin: 8px 0 0 8px;
 }
-.figure {
+.thumbnail-accommodation__figure {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -430,6 +439,39 @@ h2 {
   height: 112px;/*photo*/
   overflow: hidden;
 }
+
+
+
+
+
+/* f. Thumbnail module popular
+========================== */
+.thumbnail-popular {
+  display: flex;
+  width: 330px;
+  height: 150px;/*photo*/
+  margin-bottom: 35px;
+  margin-right: 35px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #d4d1d1;
+  border: 5px solid #ffffff;/* peu-être à mettre "transparent" */
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.thumbnail-popular__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;/*photo*/
+  height: 100%;
+  overflow: hidden;
+}
+.droite {
+  display: flex;
+  flex-direction:column;
+}
+
+/************************************/
 .star {
   display: flex;
 }
@@ -439,6 +481,7 @@ h2 {
 .fa-star {
   margin-right: 2px;
 }
+/************************************/
 
 /*-----------------------------------------------
 END

@@ -18,7 +18,7 @@
     <header>
       <!-- Responsive-navigation-module -->
       <nav class="nav">
-          <img class="logo" src="images/reservia.svg" alt="">
+        <img class="logo" src="images/reservia.svg" alt="">
         <div class="menu">
           <a class="nav__link nav__link-a" href="#accommodation">Hébergements</a>
           <a class="nav__link nav__link-b" href="#activity">Activités</a>
@@ -104,8 +104,8 @@
         <section class="l-section-accommodation">
           <h3 id="accommodation">Hébergements à Marseille</h3>
           <div class="l-section-accommodation__first-line">
-            <div class="thumbnail-bloc">
-              <figure class="figure">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
                 <img src="images/auberge-la-cannebiere.jpg" style="width: 240px; height: 160px;" alt="">
               </figure>
               <h4>Auberge la Cannnebière</h4>
@@ -118,8 +118,8 @@
                 <span class="svg-color-grey fas fa-star fa-xs"></span>
               </div>
             </div>
-            <div class="thumbnail-bloc">
-              <figure class="figure">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
                 <img src="images/hotel-du-port.jpg" style="width: 240px; height: 160px;" alt="">
               </figure>
               <h4>Hôtel du port</h4>
@@ -132,8 +132,8 @@
                 <span class="svg-color-blue fas fa-star fa-xs"></span>
               </div>
             </div>
-            <div class="thumbnail-bloc">
-              <figure class="figure">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
                 <img src="images/hotel-les-mouettes.jpg" style="width: 240px; height: 160px;" alt="">
               </figure>
               <h4>Hôtel Les mouettes</h4>
@@ -148,9 +148,9 @@
             </div>
           </div>
           <div class="l-section-accommodation__second-line">
-            <div class="thumbnail-bloc">
-              <figure class="figure">
-                <img src="images/hotel-de-la-mer.jpg" style="width: 240px; height: 224px;"alt="">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
+                <img src="images/hotel-de-la-mer.jpg" style="width: 240px; height: 224px;" alt="">
               </figure>
               <h4>Hôtel de la mer</h4>
               <p>Nuit à partir de 46<span>&euro;</span></p>
@@ -162,8 +162,8 @@
                 <span class="svg-color-grey fas fa-star fa-xs"></span>
               </div>
             </div>
-            <div class="thumbnail-bloc">
-              <figure class="figure">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
                 <img src="images/auberge-le-panier.jpg" style="width: 240px; height: 135px;" alt="">
               </figure>
               <h4>Auberge Le Panier</h4>
@@ -176,8 +176,8 @@
                 <span class="svg-color-grey fas fa-star fa-xs"></span>
               </div>
             </div>
-            <div class="thumbnail-bloc">
-              <figure class="figure">
+            <div class="thumbnail-accommodation">
+              <figure class="thumbnail-accommodation__figure">
                 <img src="images/hotel-chez-amina.jpg" style="width: 240px; height: 360px;" alt="">
               </figure>
               <h4>Hôtel chez Amina</h4>
@@ -194,13 +194,91 @@
           <p>Afficher plus</p>
         </section>
         <!-- Section-accommodation END-->
+
+
+
+
+
+
+
+
+
+
+
         <!-- Section-popular -->
-        <section>
-          <h3>
-            <!--Les plus populaires-->
-          </h3>
+        <section class="l-section-popular">
+
+          <div style="display: flex; justify-content: space-between;">
+            <h3>Les plus populaires</h3>
+            <i class="fas fa-chart-line fa-lg"></i>
+          </div>
+
+
+          <div class="thumbnail-popular">
+            <figure class="thumbnail-popular__figure">
+              <img src="images/hotel-le-soleil-du-matin.jpg" style="height: 100%;" alt="">
+            </figure>
+            <div class="droite">
+              <h4>Hôtel Le soleil du matin</h4>
+              <p>Nuit à partir de 128<span></span>&euro;</span></p>
+              <div class="star">
+                <span class="svg-color-blue fas fa-star fa-xs"></span>
+                <span class="svg-color-blue fas fa-star fa-xs"></span>
+                <span class="svg-color-blue fas fa-star fa-xs"></span>
+                <span class="svg-color-blue fas fa-star fa-xs"></span>
+                <span class="svg-color-grey fas fa-star fa-xs"></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="thumbnail-popular">
+          <figure class="thumbnail-popular__figure">
+            <img src="images/hotel-le-soleil-du-matin.jpg" style="height: 100%;" alt="">
+          </figure>
+          <div class="droite">
+            <h4>Hôtel Le soleil du matin</h4>
+            <p>Nuit à partir de 128<span></span>&euro;</span></p>
+            <div class="star">
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-grey fas fa-star fa-xs"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbnail-popular">
+          <figure class="thumbnail-popular__figure">
+            <img src="images/hotel-le-soleil-du-matin.jpg" style="height: 100%;" alt="">
+          </figure>
+          <div class="droite">
+            <h4>Hôtel Le soleil du matin</h4>
+            <p>Nuit à partir de 128<span></span>&euro;</span></p>
+            <div class="star">
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-blue fas fa-star fa-xs"></span>
+              <span class="svg-color-grey fas fa-star fa-xs"></span>
+            </div>
+          </div>
+        </div>
+
+
+
+
         </section>
         <!-- Section-popular END-->
+
+
+
+
+
+
+
+
         <!-- Div test END -->
       </div>
       <!-- Section-activity -->
