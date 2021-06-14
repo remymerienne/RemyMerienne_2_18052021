@@ -12,8 +12,9 @@
    b. Search module
    c. Filter module
    d. Information module
-   e. Thumbnail module accommodadtion
-   f. Thumbnail module popular
+   e. grading module
+   f. Thumbnail module accommodadtion
+   g. Thumbnail module popular
 -----------------------------------------------*/
 
 /*-----------------------------------------------
@@ -95,11 +96,13 @@ footer {
 /*-----------------------------------------------
 3. Layout
 -----------------------------------------------*/
+body {
+  display: flex;
+  justify-content: center;
+}
 .l-page {
-  width: 70%;
-  margin: 0 auto;
+  width: 1333px;
   max-width: 1920px;
-  border: 1px solid green;
 }
 @media screen and (max-width: 900px) {
   .l-page {
@@ -114,26 +117,20 @@ footer {
 /* regroupe section 1 et 2 */
 .test {
   display: flex;
-  border: 2px solid red;
   margin-top: 20px;
 }
 .l-section-accommodation {
   display: flex;
   flex-direction: column;
-  padding-left: 35px;
+  padding: 18.5px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
-/* revoir selecteur car concerne tous les h3 de section + typo */
-h3 {
-  margin-top: 35px;
-}
-.l-section-accommodation > p {
-  margin: 35px 0;
+.l-thumbnail {
+  margin: 18.5px;
 }
 .l-section-accommodation__first-line {
   display: flex;
-  margin-bottom: 35px;
 }
 .l-section-accommodation__second-line {
   display: flex;
@@ -141,11 +138,12 @@ h3 {
 .l-section-popular {
   display: flex;
   flex-direction: column;
-  margin-left: 35px;
-  padding-left: 35px;
+  margin-left: 37px;
+  padding: 18.5px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
+
 /*-----------------------------------------------
 4. Typography
 -----------------------------------------------*/
@@ -154,13 +152,26 @@ input {
   font-family: 'Raleway', sans-serif;
 } 
 h1 {
-  font-size: 22px;
   margin-bottom: 7px;
+  font-size: 22px;
 }
 h2 {
+  margin-top: 0;
   font-size: 16.5px;
   font-weight: 300;
-  margin-top: 0;
+}
+h3 {
+  margin: 15px 0 0 18.5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+section > p {
+  margin: 30px 0 0 18.5px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.price {
+  font-weight: 600;
 }
 .svg-color-blue {
   color: #0065fc;
@@ -188,8 +199,8 @@ h2 {
 }
 .logo {
   width: 100px;
-  position: absolute;
-  left: 15%;
+  position: relative;
+  right: 845px;
   top: 4%;
 }
 @media screen and (max-width: 900px) {
@@ -346,7 +357,7 @@ h2 {
   margin-top: 25px;
   font-weight: 600;
 }
-@media screen and (max-width: 1428px) {
+@media screen and (max-width: 500px) {
   .filter-bloc {
     flex-direction: column;
     align-items: flex-start;
@@ -371,7 +382,7 @@ h2 {
   border: 2px solid #f2f2f2;
   border-radius: 50px;
 }
-@media screen and (max-width: 1428px) {
+@media screen and (max-width: 500px) {
   .filter-element {
     margin-bottom: 15px;
   }
@@ -414,44 +425,48 @@ h2 {
   font-size: 16px;
 }
 
-/* e. Thumbnail module accommodadtion
+/* e. Grading module
+========================== */
+.star {
+  display: flex;
+}
+.fa-star {
+  margin-right: 2px;
+}
+
+/* f. Thumbnail module accommodadtion
 ========================== */
 .thumbnail-accommodation {
-  width: 250px;/*photo*/
+  width: 250px;/*photo */
   height: 200px;
-  margin-right: 35px;
   overflow: hidden;
   box-shadow: 0 0 15px #d4d1d1;
   border: 5px solid #ffffff;/* peu-être à mettre "transparent" */
   border-radius: 15px;
   background-color: #ffffff;
 }
-.thumbnail-accommodation > h4,
-.thumbnail-accommodation > p,
-.thumbnail-accommodation > div {
+
+.thumbnail-accommodation h4,
+.thumbnail-accommodation p,
+.thumbnail-accommodation div {
   margin: 8px 0 0 8px;
 }
 .thumbnail-accommodation__figure {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
   height: 112px;/*photo*/
   overflow: hidden;
 }
+.thumbnail-accommodation__figure img {
+  width: 100%;
+}
 
-
-
-
-
-/* f. Thumbnail module popular
+/* g. Thumbnail module popular
 ========================== */
 .thumbnail-popular {
   display: flex;
-  width: 330px;
-  height: 150px;/*photo*/
-  margin-bottom: 35px;
-  margin-right: 35px;
+  width: 322px;
+  height: 150px;
   overflow: hidden;
   box-shadow: 0 0 15px #d4d1d1;
   border: 5px solid #ffffff;/* peu-être à mettre "transparent" */
@@ -462,26 +477,22 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;/*photo*/
-  height: 100%;
+  width: 125px;
   overflow: hidden;
 }
 .droite {
   display: flex;
   flex-direction:column;
+  width: 197px;
+  padding-left: 20px;
 }
-
-/************************************/
-.star {
-  display: flex;
+.droite h4,
+.droite p {
+  margin: 8px 0 0 0;
 }
-.star {
-  display: flex;
+.droite .star {
+  margin-top: 45px;
 }
-.fa-star {
-  margin-right: 2px;
-}
-/************************************/
 
 /*-----------------------------------------------
 END
