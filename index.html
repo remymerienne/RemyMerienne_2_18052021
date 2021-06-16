@@ -12,278 +12,312 @@
 </head>
 
 <body>
-  <!-- Page -->
-  <div class="l-page">
-    <!-- Header -->
-    <header>
-      <!-- Responsive-navigation-module -->
-      <nav class="nav">
-        <img class="logo" src="images/reservia.svg" alt="">
-        <div class="menu">
-          <a class="nav__link nav__link-a" href="#accommodation">Hébergements</a>
-          <a class="nav__link nav__link-b" href="#activity">Activités</a>
+  <!-- Main-container -->
+  <div class="container">
+    <!-- Page -->
+    <div class="l-page">
+      <!-- Header -->
+      <header>
+        <!-- Responsive-navigation-module -->
+        <nav class="nav">
+          <img class="logo" src="images/reservia.svg" alt="">
+          <div class="menu">
+            <a class="nav__link nav__link-a" href="#accommodation">Hébergements</a>
+            <a class="nav__link nav__link-b" href="#activity">Activités</a>
+          </div>
+          <a class="nav__link nav__link-c" href="#">S'inscrire</a>
+        </nav>
+        <!-- Responsive-navigation-module END -->
+        <div class="l-header__down">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h2>En plein centre ville ou en pleine nature</h2>
+          <!-- Search-module -->
+          <div class="search-bloc">
+            <div class="search-icon">
+              <span class="fas fa-map-marker-alt"></span>
+            </div>
+            <!-- Locality-search-form -->
+            <form class="search-form">
+              <!-- method="post" action="form.php" (include with back-end dev) -->
+              <input type="text" class="search-form__place" name="place" placeholder="Ville, Pays">
+              <input type="submit" class="search-form__btn" value="Rechercher">
+              <button type="submit" class="search-form__icon" aria-label="Rechercher">
+                <span class="fas fa-search" style="color: #ffffff;"></span>
+              </button>
+            </form>
+            <!-- Locality-search-form END -->
+          </div>
+          <!-- Search-module END -->
+          <!-- Filter-module -->
+          <div class="filter-bloc">
+            <P class="filter-bloc__p">Filtres</P>
+            <div class="filter-wrap">
+              <!-- Filter-Economic -->
+              <div class="filter-element">
+                <div class="filter-element__icon">
+                  <span class="svg-color-blue fas fa-money-bill-wave fa-lg"></span>
+                </div>
+                <p class="filter-element__p">Economique</p>
+              </div>
+              <!-- Filter-Economic END -->
+              <!-- Filter-Family -->
+              <div class="filter-element">
+                <div class="filter-element__icon">
+                  <span class="svg-color-blue fas fa-child fa-lg"></span>
+                </div>
+                <p class="filter-element__p">Familial</p>
+              </div>
+              <!-- Filter-Family END-->
+              <!-- Filter-Romantic -->
+              <div class="filter-element">
+                <div class="filter-element__icon">
+                  <span class="svg-color-blue fas fa-heart fa-lg"></span>
+                </div>
+                <p class="filter-element__p">Romantique</p>
+              </div>
+              <!-- Filter-Romantic END-->
+              <!-- Filter-Animals -->
+              <div class="filter-element">
+                <div class="filter-element__icon">
+                  <span class="svg-color-blue fas fa-dog fa-lg"></span>
+                </div>
+                <p class="filter-element__p">Animaux autorisés</p>
+              </div>
+              <!-- Filter-Animals END -->
+            </div>
+          </div>
+          <!-- Filter-module END -->
+          <!-- Information-module -->
+          <div class="information">
+            <div class="information__logo">
+              <span class="svg-color-blue fas fa-info fa-xs"></span>
+            </div>
+            <p class="information__p">Plus de 500 logement sont disponibles dans cette ville</p>
+          </div>
+          <!-- Information-module END-->
         </div>
-        <a class="nav__link nav__link-c" href="#">S'inscrire</a>
-      </nav>
-      <!-- Responsive-navigation-module END -->
-      <div class="l-header__down">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en pleine nature</h2>
-        <!-- Search-module -->
-        <div class="search-bloc">
-          <div class="search-icon">
-            <span class="fas fa-map-marker-alt"></span>
-          </div>
-          <!-- Locality-search-form -->
-          <form class="search-form">
-            <!-- method="post" action="form.php" (include with back-end dev) -->
-            <input type="text" class="search-form__place" name="place" placeholder="Ville, Pays">
-            <input type="submit" class="search-form__btn" value="Rechercher">
-            <button type="submit" class="search-form__icon" aria-label="Rechercher">
-              <span class="fas fa-search" style="color: #ffffff;"></span>
-            </button>
-          </form>
-          <!-- Locality-search-form END -->
+      </header>
+      <!-- Header END -->
+      <!-- Main -->
+      <main>
+        <!-- Div section 1 et 2 -->
+        <div class="test">
+          <!-- Section-accommodation -->
+          <section class="l-section-accommodation">
+            <h3 id="accommodation">Hébergements à Marseille</h3>
+            <div class="l-section-accommodation__first-line">
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/auberge-la-cannebiere.jpg" alt="">
+                </figure>
+                <h4>Auberge la Cannnebière</h4>
+                <p>Nuit à partir de <span class="price">25&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/hotel-du-port.jpg" alt="">
+                </figure>
+                <h4>Hôtel du port</h4>
+                <p>Nuit à partir de 52<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                </div>
+              </div>
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/hotel-les-mouettes.jpg" alt="">
+                </figure>
+                <h4>Hôtel Les mouettes</h4>
+                <p>Nuit à partir de 76<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+            </div>
+            <div class="l-section-accommodation__second-line">
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/hotel-de-la-mer.jpg" alt="">
+                </figure>
+                <h4>Hôtel de la mer</h4>
+                <p>Nuit à partir de 46<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/auberge-le-panier.jpg" alt="">
+                </figure>
+                <h4>Auberge Le Panier</h4>
+                <p>Nuit à partir de <span class="price">23&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+              <div class="thumbnail-accommodation l-thumbnail">
+                <figure class="thumbnail-accommodation__figure">
+                  <img src="images/accommodation/hotel-chez-amina.jpg" alt="">
+                </figure>
+                <h4>Hôtel chez Amina</h4>
+                <p>Nuit à partir de 96<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                </div>
+              </div>
+            </div>
+            <p>Afficher plus</p>
+          </section>
+          <!-- Section-accommodation END-->
+          <!-- Section-popular -->
+          <section class="l-section-popular">
+            <!-- ! Créer class et placer code dans CSS -->
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <h3>Les plus populaires</h3>
+              <span class="fas fa-chart-line fa-lg" style="margin-right: 18.5px;"></span>
+            </div>
+            <div class="thumbnail-popular l-thumbnail">
+              <figure class="thumbnail-popular__figure">
+                <img src="images/popular/hotel-le-soleil-du-matin.jpg" style="height: 135px;" alt="">
+              </figure>
+              <div class="droite">
+                <h4>Hôtel Le soleil du matin</h4>
+                <p>Nuit à partir de 128<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                </div>
+              </div>
+            </div>
+            <div class="thumbnail-popular l-thumbnail">
+              <figure class="thumbnail-popular__figure">
+                <img src="images/popular/au-coeur-de-l-eau-chambres-d-hotes.jpg" style="height: 137px;" alt="">
+              </figure>
+              <div class="droite">
+                <h4>Au c&oelig;ur de l'eau Chambres d'hôtes</h4>
+                <p>Nuit à partir de 71<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+            </div>
+            <div class="thumbnail-popular l-thumbnail">
+              <figure class="thumbnail-popular__figure">
+                <img src="images/popular/hotel-tout-bleu-et-blanc.jpg" style="height: 195px;" alt="">
+              </figure>
+              <div class="droite">
+                <h4>Hôtel Tout bleu et Blanc</h4>
+                <p>Nuit à partir de 68<span class="price">&euro;</span></p>
+                <div class="star">
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-blue fas fa-star fa-xs"></span>
+                  <span class="svg-color-grey fas fa-star fa-xs"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section-popular END-->
+          <!-- Div test END -->
         </div>
-        <!-- Search-module END -->
-        <!-- Filter-module -->
-        <div class="filter-bloc">
-          <P class="filter-bloc__p">Filtres</P>
-          <div class="filter-wrap">
-            <!-- Filter-Economic -->
-            <div class="filter-element">
-              <div class="filter-element__icon">
-                <span class="svg-color-blue fas fa-money-bill-wave fa-lg"></span>
-              </div>
-              <p class="filter-element__p">Economique</p>
-            </div>
-            <!-- Filter-Economic END -->
-            <!-- Filter-Family -->
-            <div class="filter-element">
-              <div class="filter-element__icon">
-                <span class="svg-color-blue fas fa-child fa-lg"></span>
-              </div>
-              <p class="filter-element__p">Familial</p>
-            </div>
-            <!-- Filter-Family END-->
-            <!-- Filter-Romantic -->
-            <div class="filter-element">
-              <div class="filter-element__icon">
-                <span class="svg-color-blue fas fa-heart fa-lg"></span>
-              </div>
-              <p class="filter-element__p">Romantique</p>
-            </div>
-            <!-- Filter-Romantic END-->
-            <!-- Filter-Animals -->
-            <div class="filter-element">
-              <div class="filter-element__icon">
-                <span class="svg-color-blue fas fa-dog fa-lg"></span>
-              </div>
-              <p class="filter-element__p">Animaux autorisés</p>
-            </div>
-            <!-- Filter-Animals END -->
+
+
+
+
+
+
+        <!-- Section-activity -->
+        <section class="l-section-activity">
+          <!-- * ok créée -->
+          <!--<h3 id="activity">Activités à Marseille</h3>-->
+
+
+          <div class="thumbnail-activity">
+            <!-- * Activity créée -->
+            <figure class="thumbnail-activity__figure">
+              <img src="images/activity/vieux-port.jpg" style="height: 435px;" alt="">
+            </figure>
+            <h4>Vieux port</h4>
+
           </div>
-        </div>
-        <!-- Filter-module END -->
-        <!-- Information-module -->
-        <div class="information">
-          <div class="information__logo">
-            <span class="svg-color-blue fas fa-info fa-xs"></span>
-          </div>
-          <p class="information__p">Plus de 500 logement sont disponibles dans cette ville</p>
-        </div>
-        <!-- Information-module END-->
-      </div>
-    </header>
-    <!-- Header END -->
-    <!-- Main -->
-    <main>
-      <!-- Div section 1 et 2 -->
-      <div class="test">
-        <!-- Section-accommodation -->
-        <section class="l-section-accommodation">
-          <h3 id="accommodation">Hébergements à Marseille</h3>
-          <div class="l-section-accommodation__first-line">
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/auberge-la-cannebiere.jpg" alt="">
-              </figure>
-              <h4>Auberge la Cannnebière</h4>
-              <p>Nuit à partir de <span class="price">25&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/hotel-du-port.jpg" alt="">
-              </figure>
-              <h4>Hôtel du port</h4>
-              <p>Nuit à partir de 52<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-              </div>
-            </div>
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/hotel-les-mouettes.jpg" alt="">
-              </figure>
-              <h4>Hôtel Les mouettes</h4>
-              <p>Nuit à partir de 76<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-          </div>
-          <div class="l-section-accommodation__second-line">
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/hotel-de-la-mer.jpg" alt="">
-              </figure>
-              <h4>Hôtel de la mer</h4>
-              <p>Nuit à partir de 46<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/auberge-le-panier.jpg" alt="">
-              </figure>
-              <h4>Auberge Le Panier</h4>
-              <p>Nuit à partir de <span class="price">23&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-            <div class="thumbnail-accommodation l-thumbnail">
-              <figure class="thumbnail-accommodation__figure">
-                <img src="images/accommodation/hotel-chez-amina.jpg" alt="">
-              </figure>
-              <h4>Hôtel chez Amina</h4>
-              <p>Nuit à partir de 96<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-              </div>
-            </div>
-          </div>
-          <p>Afficher plus</p>
+
+
+
+
+
+
+
         </section>
-        <!-- Section-accommodation END-->
-        <!-- Section-popular -->
-        <section class="l-section-popular">
-          <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <!-- ******************* -->
-            <h3>Les plus populaires</h3>
-            <span class="fas fa-chart-line fa-lg" style="margin-right: 18.5px;"></span>
-          </div>
-          <div class="thumbnail-popular l-thumbnail">
-            <figure class="thumbnail-popular__figure">
-              <img src="images/popular/hotel-le-soleil-du-matin.jpg" style="height: 135px;" alt="">
-            </figure>
-            <div class="droite">
-              <h4>Hôtel Le soleil du matin</h4>
-              <p>Nuit à partir de 128<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-              </div>
-            </div>
-          </div>
-          <div class="thumbnail-popular l-thumbnail">
-            <figure class="thumbnail-popular__figure">
-              <img src="images/popular/au-coeur-de-l-eau-chambres-d-hotes.jpg" style="height: 137px;" alt="">
-            </figure>
-            <div class="droite">
-              <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-              <p>Nuit à partir de 71<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-          </div>
-          <div class="thumbnail-popular l-thumbnail">
-            <figure class="thumbnail-popular__figure">
-              <img src="images/popular/hotel-tout-bleu-et-blanc.jpg" style="height: 195px;" alt="">
-            </figure>
-            <div class="droite">
-              <h4>Hôtel Tout bleu et Blanc</h4>
-              <p>Nuit à partir de 68<span class="price">&euro;</span></p>
-              <div class="star">
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-blue fas fa-star fa-xs"></span>
-                <span class="svg-color-grey fas fa-star fa-xs"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Section-popular END-->
-        <!-- Div test END -->
-      </div>
-      <!-- Section-activity -->
-      <section>
-        <h3 id="activity">
-          <!--Activités à Marseille-->
-        </h3>
-      </section>
-      <!-- Section-activity END-->
-    </main>
-    <!-- Main END -->
-    <!-- Footer -->
-    <footer>
-      <h4>A propos</h4>
-      <ul>
-        <li>Fonctionnement du site</li>
-        <li>Conditions générales de vente</li>
-        <li>Données et confidentialité</li>
-      </ul>
-      <h4>Nos hébergements</h4>
-      <ul>
-        <li>Charte qualité</li>
-        <li>Soumettre votre hôtel</li>
-      </ul>
-      <h4>Assistance</h4>
-      <ul>
-        <li>Centre d'aide</li>
-        <li>Nous contacter</li>
-      </ul>
-    </footer>
-    <!-- Footer END -->
+        <!-- Section-activity END-->
+
+
+
+
+
+
+
+
+      </main>
+      <!-- Main END -->
+      <!-- Footer -->
+      <footer>
+        <h4>A propos</h4>
+        <ul>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales de vente</li>
+          <li>Données et confidentialité</li>
+        </ul>
+        <h4>Nos hébergements</h4>
+        <ul>
+          <li>Charte qualité</li>
+          <li>Soumettre votre hôtel</li>
+        </ul>
+        <h4>Assistance</h4>
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Nous contacter</li>
+        </ul>
+      </footer>
+      <!-- Footer END -->
+    </div>
+    <!-- Page END -->
   </div>
-  <!-- Page END -->
+  <!-- Main-container END-->
 </body>
 
 </html>
