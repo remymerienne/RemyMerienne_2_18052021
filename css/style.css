@@ -90,30 +90,27 @@ figure {
 a {
   text-decoration: none;
 }
-/* ! Provisoire */
-footer {
-  display: none;
-}
 
 /*-----------------------------------------------
 3. Layout
 -----------------------------------------------*/
 .container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: auto;
   max-width: 1920px;
 }
-.l-page {
+.page {
   width: 1333px;
 }
 @media screen and (max-width: 900px) {
-  .l-page {
+  .page {
     width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
-  .l-header__down {
+  .header__down {
     margin: 0 35px;
   }
 }
@@ -122,23 +119,23 @@ footer {
   display: flex;
   margin-top: 20px;
 }
-.l-section-accommodation {
+.section-accommodation {
   display: flex;
   flex-direction: column;
   padding: 18.5px;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
-.l-thumbnail {
+.thumbnail {
   margin: 18.5px;
 }
-.l-section-accommodation__first-line {
+.section-accommodation__first-line {
   display: flex;
 }
-.l-section-accommodation__second-line {
+.section-accommodation__second-line {
   display: flex;
 }
-.l-section-popular {
+.section-popular {
   display: flex;
   flex-direction: column;
   margin-left: 37px;
@@ -146,17 +143,15 @@ footer {
   border-radius: 15px;
   background-color: #f2f2f2;
 }
-.l-section-popular__header {
+.section-popular__header {
   display: flex; 
   justify-content: space-between; 
   align-items: baseline;
 }
-.l-section-activity {
+.section-activity {
   margin-top: 50px;
-  /* ! Provisoire */
-  margin-bottom: 200px;
 }
-.l-bloc-activity {
+.bloc-activity {
   display: flex;
   justify-content: space-between;
 }
@@ -165,7 +160,34 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 230px;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+.footer-bloc {
+  display: flex;
+  width: 1333px;
+}
+.footer-bloc__item {
+  margin-right: 240px ;
+}
+.footer-bloc__item ul {
+  padding-left: 0;
+}
+.footer-bloc__item li {
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.footer-bloc__item h5 {
+  margin-bottom: 25px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
 /*-----------------------------------------------
 4. Typography
 -----------------------------------------------*/
@@ -182,18 +204,26 @@ h2 {
   font-size: 16.5px;
   font-weight: 300;
 }
-.l-section-accommodation h3,
-.l-section-popular h3 {
+.section-accommodation h3,
+.section-popular h3 {
   margin: 15px 0 0 18.5px;
   font-size: 22px;
   font-weight: 600;
 }
-.l-section-activity__h3 {
+.section-activity__h3 {
   margin-bottom: 18.5px;
   font-size: 22px;
   font-weight: 600;
 }
-
+h4 {
+  font-weight: 600;
+}
+h5 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
 section > p {
   margin: 30px 0 0 18.5px;
   font-size: 17px;
