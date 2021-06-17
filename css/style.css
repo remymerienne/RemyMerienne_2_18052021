@@ -104,9 +104,11 @@ a {
 .page {
   width: 1333px;
 }
-@media screen and (max-width: 900px) {
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .container,
   .page {
-    width: 100%;
+    width: 1114px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -118,6 +120,12 @@ a {
 .section-group {
   display: flex;
   margin-top: 20px;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .section-group {
+    flex-direction: column;
+  }
 }
 .section-accommodation {
   display: flex;
@@ -135,13 +143,28 @@ a {
 .section-accommodation__second-line {
   display: flex;
 }
-.section-popular {
-  display: flex;
-  flex-direction: column;
+.popular {
   margin-left: 37px;
   padding: 18.5px;
   border-radius: 15px;
   background-color: #f2f2f2;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .popular {
+    margin-left: 0;
+    margin-top: 50px;  
+  }
+}
+.section-popular {
+  display: flex;
+  flex-direction: column;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .section-popular {
+    flex-direction: row;
+  }
 }
 .section-popular__header {
   display: flex; 
@@ -154,6 +177,12 @@ a {
 .bloc-activity {
   display: flex;
   justify-content: space-between;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .bloc-activity {
+    justify-content: flex-start;
+  }
 }
 .activity-group-of-two {
   display: flex;
@@ -172,8 +201,20 @@ a {
   display: flex;
   width: 1333px;
 }
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .footer-bloc {
+    width: 1114px;
+  }
+}
 .footer-bloc__item {
   margin-right: 240px ;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .footer-bloc__item {
+    margin-right: 200px;
+  }
 }
 .footer-bloc__item ul {
   padding-left: 0;
@@ -205,7 +246,7 @@ h2 {
   font-weight: 300;
 }
 .section-accommodation h3,
-.section-popular h3 {
+.popular h3 {
   margin: 15px 0 0 18.5px;
   font-size: 22px;
   font-weight: 600;
@@ -259,8 +300,14 @@ section > p {
 .logo {
   width: 100px;
   position: relative;
-  right: 845px;
+  right: 847px;
   top: 15px;
+}
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .logo {
+    right: 628px;
+  }
 }
 @media screen and (max-width: 900px) {
   .logo {
@@ -509,7 +556,12 @@ section > p {
   border-radius: 15px; 
   background-color: #ffffff;
 }
-
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .thumbnail-accommodation {
+    width: 322px;
+  }
+}
 .thumbnail-accommodation h4,
 .thumbnail-accommodation p,
 .thumbnail-accommodation div {
@@ -564,6 +616,12 @@ section > p {
   overflow: hidden;
   border-radius: 15px;
 }
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .thumbnail-activity {
+    width: 250.7px;
+  }
+}
 .thumbnail-activity h4 {
   margin-left: 20px;
 }
@@ -575,12 +633,24 @@ section > p {
 .thumbnail-activity-type-a {
   height: 437px;
 } 
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .thumbnail-activity-type-a {
+    margin-right: 37px;
+  }
+}
 .thumbnail-activity-type-a figure {
   height: 380px;
 } 
 .thumbnail-activity-type-b {
   height: 235px;
 } 
+/* + break point 1365px */
+@media screen and (max-width: 1365px) {
+  .thumbnail-activity-type-b {
+    margin-right: 37px;
+  }
+}
 .thumbnail-activity-type-b figure {
   height: 178px;
   align-items: center;
