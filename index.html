@@ -104,7 +104,10 @@
         <div class="section-group">
           <!-- Section-accommodation -->
           <section class="accommodation">
-            <h3>Hébergements à Marseille</h3>
+            <!-- ! test de <div> heeader -->
+            <div class="section-popular__header">
+            <h3 id="accommodation">Hébergements à Marseille</h3>
+          </div>
             <div class="section-accommodation">
               <div class="section-accommodation__first-line">
                 <div class="thumbnail-accommodation thumbnail">
@@ -202,7 +205,7 @@
           <section class="popular">
             <div class="section-popular__header">
               <h3>Les plus populaires</h3>
-              <span class="fas fa-chart-line fa-lg" style="margin-right: 18.5px;"></span>
+              <span class="fas fa-chart-line fa-lg"></span>
             </div>
             <div class="section-popular">
               <div class="thumbnail-popular thumbnail">
@@ -261,25 +264,27 @@
         <!-- Groups-sections-Accommodation-and-Popular END -->
         <!-- Section-activity -->
         <section class="section-activity">
-          <h3 class="section-activity__h3">Activités à Marseille</h3>
+          <div class="section-popular__header">
+          <h3 class="section-activity__h3" id="activity">Activités à Marseille</h3>
+          </div>
           <div class="bloc-activity">
             <div class="activity-group-of-three">
               <div class="thumbnail-activity thumbnail-activity-type-a">
                 <figure class="thumbnail-activity__figure">
-                  <img src="images/activity/vieux-port.jpg" style="width: 655.5px; height: 437px;" alt="">
+                  <img src="images/activity/vieux-port.jpg" id="port" alt="">
                 </figure>
                 <h4>Vieux port</h4>
               </div>
               <div class="activity-group-of-two">
                 <div class="thumbnail-activity thumbnail-activity-type-b">
                   <figure class="thumbnail-activity__figure">
-                    <img src="images/activity/fort-de-pomegues.jpg" style="width: 433px; height: 650px;" alt="">
+                    <img src="images/activity/fort-de-pomegues.jpg" id="pomegues" alt="">
                   </figure>
                   <h4>Fort de Pomègues</h4>
                 </div>
                 <div class="thumbnail-activity thumbnail-activity-type-c">
                   <figure class="thumbnail-activity__figure">
-                    <img src="images/activity/iles-du-frioul.jpg" style="width: 305.5px; height: 170px;" alt="">
+                    <img src="images/activity/iles-du-frioul.jpg" id="frioul" alt="">
                   </figure>
                   <h4>Îles du Frioul</h4>
                 </div>
@@ -288,21 +293,20 @@
             <div class="activity-group-of-three">
               <div class="thumbnail-activity thumbnail-activity-type-a">
                 <figure class="thumbnail-activity__figure">
-                  <img src="images/activity/parc-national-des-calanques.jpg" style="width: 652.5px; height: 435px;"
-                    alt="">
+                  <img src="images/activity/parc-national-des-calanques.jpg" id="calanques" alt="">
                 </figure>
                 <h4>Parc National des Calanques</h4>
               </div>
               <div class="activity-group-of-two">
                 <div class="thumbnail-activity thumbnail-activity-type-d">
                   <figure class="thumbnail-activity__figure">
-                    <img src="images/activity/notre-dame-de-la-garde.jpg" style="width: 305.5px; height: 200px;" alt="">
+                    <img src="images/activity/notre-dame-de-la-garde.jpg" id="garde" alt="">
                   </figure>
                   <h4>Notre-Dame-de-la-garde</h4>
                 </div>
                 <div class="thumbnail-activity thumbnail-activity-type-d">
                   <figure class="thumbnail-activity__figure">
-                    <img src="images/activity/parc-longchamp.jpg" style="width: 305.5px; height: 200px;" alt="">
+                    <img src="images/activity/parc-longchamp.jpg" id="longchamp" alt="">
                   </figure>
                   <h4>Parc Longchamp</h4>
                 </div>
