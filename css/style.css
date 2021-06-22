@@ -16,6 +16,7 @@
    f. Thumbnail module "Accommodation"
    g. Thumbnail module "Popular"
    h. Thumbnail module "Activity"
+6. Effect
 -----------------------------------------------*/
 
 /*-----------------------------------------------
@@ -89,6 +90,10 @@ figure {
 }
 a {
   text-decoration: none;
+  color: #000000;
+}
+*:visited {
+  color: #000000;
 }
 
 /*-----------------------------------------------
@@ -489,6 +494,9 @@ h5 {
   margin-top: 40px;
   font-size: 18px;
   font-weight: 600;
+}
+li a:hover {
+  text-decoration: underline;
 }
 section > p {
   margin: 30px 0 0 18.5px;
@@ -1110,6 +1118,20 @@ section > p {
     height: 510px;
   }
 }
+
+/*-----------------------------------------------
+6. Effect
+-----------------------------------------------*/
+.effect {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+.effect:hover {
+  transform: scale(1.03);
+}
+
 /*-----------------------------------------------
 END
 -----------------------------------------------*/
