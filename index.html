@@ -7,6 +7,15 @@
   <meta name="description"
     content="Organisation et planification de vacances. Recherche d'hébergements et d'activités par ville et par pays.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Pre-load-fonts -->
+  <link rel="preload" href="fonts/raleway-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-v19-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-v19-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Pre-load-style -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/all.css" as="style">
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/all.css">
@@ -113,7 +122,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/auberge-la-cannebiere.webp">
+                        <img src="images/accommodation/auberge-la-cannebiere.jpg" alt="Auberge la Cannebière">
+                      </picture>
                     </figure>
                     <h4>Auberge la Cannnebière</h4>
                     <p>Nuit à partir de <span class="price">25&euro;</span></p>
@@ -129,7 +141,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/hotel-du-port.jpg" alt="Hôtel du port">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/hotel-du-port.webp">
+                        <img src="images/accommodation/hotel-du-port.jpg" alt="Hôtel du port">
+                      </picture>
                     </figure>
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de 52<span class="price">&euro;</span></p>
@@ -145,7 +160,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/hotel-les-mouettes.webp">
+                        <img src="images/accommodation/hotel-les-mouettes.jpg" alt="Hôtel Les mouettes">
+                      </picture>
                     </figure>
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de 76<span class="price">&euro;</span></p>
@@ -163,7 +181,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/hotel-de-la-mer.jpg" alt="Hôtel de la mer">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/hotel-de-la-mer.webp">
+                        <img src="images/accommodation/hotel-de-la-mer.jpg" alt="Hôtel de la mer">
+                      </picture>
                     </figure>
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de 46<span class="price">&euro;</span></p>
@@ -179,7 +200,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/auberge-le-panier.jpg" alt="Auberge le Panier">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/auberge-le-panier.webp">
+                        <img src="images/accommodation/auberge-le-panier.jpg" alt="Auberge le Panier">
+                      </picture>
                     </figure>
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de <span class="price">23&euro;</span></p>
@@ -195,7 +219,10 @@
                 <a class="effect-zoom" href="#">
                   <div class="thumbnail-accommodation thumbnail">
                     <figure class="thumbnail-accommodation__figure">
-                      <img src="images/accommodation/hotel-chez-amina.jpg" alt="Hôtel chez Amina">
+                      <picture>
+                        <source type="image/webp" srcset="images/accommodation/hotel-chez-amina.webp">
+                        <img src="images/accommodation/hotel-chez-amina.jpg" alt="Hôtel chez Amina">
+                      </picture>
                     </figure>
                     <h4>Hôtel chez Amina</h4>
                     <p>Nuit à partir de 96<span class="price">&euro;</span></p>
@@ -223,8 +250,11 @@
               <a class="effect-zoom" href="#">
                 <div class="thumbnail-popular thumbnail">
                   <figure class="thumbnail-popular__figure">
-                    <img src="images/popular/hotel-le-soleil-du-matin.jpg" style="width: 210px; height: 140px;"
-                      alt="Hôtel Le soleil du matin">
+                    <picture id="matin">
+                      <source type="image/webp" srcset="images/popular/hotel-le-soleil-du-matin.webp">
+                      <img src="images/popular/hotel-le-soleil-du-matin.jpg" style="width: 210px; height: 140px;"
+                        alt="Hôtel Le soleil du matin">
+                    </picture>
                   </figure>
                   <div class="right-side">
                     <h4>Hôtel Le soleil du matin</h4>
@@ -242,8 +272,11 @@
               <a class="effect-zoom" href="#">
                 <div class="thumbnail-popular thumbnail">
                   <figure class="thumbnail-popular__figure">
-                    <img src="images/popular/au-coeur-de-l-eau-chambres-d-hotes.jpg"
-                      style="width: 187px; height: 140px;" alt="Au coeur de l'eau Chambres d'hôtes">
+                    <picture id="hotes">
+                      <source type="image/webp" srcset="images/popular/au-coeur-de-l-eau-chambres-d-hotes.webp">
+                      <img src="images/popular/au-coeur-de-l-eau-chambres-d-hotes.jpg"
+                        style="width: 187px; height: 140px;" alt="Au coeur de l'eau Chambres d'hôtes">
+                    </picture>
                   </figure>
                   <div class="right-side">
                     <h4>Au c&oelig;ur de l'eau Chambres d'hôtes</h4>
@@ -261,8 +294,11 @@
               <a class="effect-zoom" href="#">
                 <div class="thumbnail-popular thumbnail">
                   <figure class="thumbnail-popular__figure">
-                    <img src="images/popular/hotel-tout-bleu-et-blanc.jpg" style="max-width: 100%;"
-                      alt="Hôtel Tout bleu et Blanc">
+                    <picture>
+                      <source type="image/webp" srcset="images/popular/hotel-tout-bleu-et-blanc.webp">
+                      <img src="images/popular/hotel-tout-bleu-et-blanc.jpg" style="max-width: 100%;"
+                        alt="Hôtel Tout bleu et Blanc">
+                    </picture>
                   </figure>
                   <div class="right-side">
                     <h4>Hôtel Tout bleu et Blanc</h4>

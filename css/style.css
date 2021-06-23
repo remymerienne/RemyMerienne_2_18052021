@@ -463,6 +463,13 @@ section > p {
 .right-side .star {
   margin-top: 45px;
 }
+#matin {
+  width: 210px; 
+  height: 140px;
+}
+#hotes {
+  width: 187px; height: 140px;
+}
 
 /* g. Thumbnail module "Activity" 
 ========================== */
