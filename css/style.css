@@ -334,6 +334,9 @@ section > p {
 .search-form__icon {
   display: none;
 }
+.fa-search {
+  color: #ffffff;
+}
 
 /* c. Filter module
 ========================== */
@@ -463,14 +466,17 @@ section > p {
 .right-side .star {
   margin-top: 45px;
 }
-#matin {
+.matin {
   width: 210px; 
   height: 140px;
 }
-#hotes {
-  width: 187px; height: 140px;
+.hotes {
+  width: 187px; 
+  height: 140px;
 }
-
+.blanc {
+  max-width: 100%;
+}
 /* g. Thumbnail module "Activity" 
 ========================== */
 .thumbnail-activity {
