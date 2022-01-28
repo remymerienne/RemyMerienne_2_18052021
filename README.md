@@ -6,7 +6,7 @@ Projet N°2 du parcours _Développeur Front-End_ [OpenClassrooms](https://opencl
 
 L'intégration du site a été réalisée en HTML5 et CSS3, sans Framework.
 
-Pour voir la maquette version _Desktop_ cliquez [ici](supply/desktop.png) et pour la version _Mobile_ [ici](spply/phone.png)
+Pour voir la maquette version _Desktop_ cliquez [ici](supply/_img_README/desktop.png) et pour la version _Mobile_ [ici](spply/phone.png)
 
 - [1. Reservia](#1-reservia)
   - [1.1. Découpage sémantique du site](#11-découpage-sémantique-du-site)
@@ -30,13 +30,13 @@ Pour voir la maquette version _Desktop_ cliquez [ici](supply/desktop.png) et pou
 
 Le site a été decoupé de la façon suivante :
 
-![Découpage sémantique](supply/decoupage.png)
+![Découpage sémantique](supply/_img_README/decoupage.png)
 
 Intégrer le bloc de recherche _search-bloc_ au `<header>` permet de bien dissocier notre contenu principal `<main>` qui se compose de trois `<section>` détaillant le résultat de la recherche effectuée par _l'utilisateur_.
 
 Grâce à l'outil de vérification de code HTML du [W3C](https://validator.w3.org/), nous pouvons nous assurer de la cohérence de la structure du site et des titres :
 
-![Heading level](supply/heading-level.png)
+![Heading level](supply/_img_README/heading-level.png)
 
 ## 1.2. Gestion de versions et Workflow
 
@@ -52,7 +52,7 @@ L'interface graphique [GitKraken](https://www.gitkraken.com/) a facilité l'util
 
 ## 1.3. Breakpoints
 
-![Responsive logo](supply/responsive-logo.png)
+![Responsive logo](supply/_img_README/responsive-logo.png)
 
 La résolution d'écran la plus utilisée en France (à hauteur de 12.11% tout type d'appareil confondu ces douze derniers mois) est de 1920x1080 (_source_ [_statcounter GlobalStat_](https://gs.statcounter.com/screen-resolution-stats/all/france)).  
 C'est pourquoi la maquette du site a été intégrée sur cette base dans sa version la plus grande.
@@ -74,7 +74,7 @@ La méthode **Flexbox** a été choisie pour assurer la disposition et l'adaptab
 
 Le premier défis était de dissocier le menu dont les éléménts doivent s'inverser  et adopter des comportements différents :
 
-![Menu version Desktop](supply/menu1.png)
+![Menu version Desktop](supply/_img_README/menu1.png)
 
 Le bloc `nav` en `display: flex;` place ses éléments tout à droite de la page
 
@@ -99,7 +99,7 @@ Et le logo est positionné en `absolute`
 
 En version mobile :
 
-![Menu version phone](supply/menu2.png)
+![Menu version phone](supply/_img_README/menu2.png)
 
 Les deux liens _Hébergements_ et _Activités_ tenues à l'écart dans une `<div class="menu">` ont pu se positionner ainsi en passant le bloc `nav` par défaut en `flex-direction: row;` à `flex-direction: column-reverse`;
 
@@ -162,7 +162,7 @@ Pour les images pouvant encore être allégées, une version _Webp_ est mise à 
 
 Après avoir créé un icône issu du logo, un jeu de _Favicons_ compatibles tout supports a été géneré sur le site [_realfavicongenerator.net_](https://realfavicongenerator.net/)
 
-![Favicon](supply/icon.png)
+![Favicon](supply/_img_README/icon.png)
 
 Puis le code HTML suivant inséré entre les balises `<head>`:
 
@@ -190,7 +190,7 @@ Les différents icônes générés sont stockés dans le repertoire `icons`
 
 Création de la vignette publicitaire du site apparaissant sur **Facebook** à l'aide de la documentation [developers.facebook.com](https://developers.facebook.com/docs/sharing/webmasters#markup)
 
-![Open graph](supply/capture-o-g.png)
+![Open graph](supply/_img_README/capture-o-g.png)
 
 Avec le code suivant :
 
@@ -200,7 +200,7 @@ Avec le code suivant :
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://remymerienne.github.io/RemyMerienne_2_18052021" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/valise-open-graph.jpg" />
+  <meta property="og:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_README/valise-open-graph.jpg" />
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:width" content="1060" />
   <meta property="og:image:height" content="1060" />
@@ -212,7 +212,7 @@ Avec le code suivant :
 
 Création de la vignette publicitaire du site apparaissant sur **Twitter** avec de la documentation [developer.twitter.com](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
 
-![Twitter card](supply/capture-t-c.png)
+![Twitter card](supply/_img_README/capture-t-c.png)
 
 Avec le code suivant :
 
@@ -223,7 +223,7 @@ Avec le code suivant :
   <meta name="twitter:title" content="Où irez-vous pour vos prochaines vacances ?">
   <meta name="twitter:description" content="Reservia est le site dont vous avez besoin pour trouver votre hébergement ainsi que les activités incontournables pour vos prochaines vacances">
   <meta name="twitter:creator" content="@pixabay-stux">
-  <meta name="twitter:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/valise-t-c.jpg">
+  <meta name="twitter:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_README/valise-t-c.jpg">
 ```
 
 ## 1.7. 1.0.7 Matériel utilisé
@@ -234,7 +234,7 @@ Avec le code suivant :
 
 Avec les plugins suivant :
 
-![Plugin VSC](supply/plugin_vsc.png)
+![Plugin VSC](supply/_img_README/plugin_vsc.png)
 
 Mon fichier de configuration :
 
