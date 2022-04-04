@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "Reservia",
+      "path": "./"
+    }
+  ],
+
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Reservia",
+    "liveServer.settings.port": 5500
+  }
+}
