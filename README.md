@@ -4,29 +4,46 @@ Projet N°2 du parcours _Développeur Front-End_ [OpenClassrooms](https://opencl
 
 <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
 
-L'intégration du site a été réalisée en HTML5 et CSS3, sans Framework.
+<img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/><img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>![GitKraken](https://img.shields.io/badge/GitKraken-179287?style=for-the-badge&logo=GitKraken&logoColor=white)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-Pour voir la maquette version _Desktop_ cliquez [ici](supply/_img_README/desktop.png) et pour la version _Mobile_ [ici](spply/phone.png)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+
+![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)
+
+## 1.1. Transformer une maquette en site Web avec HTML et CSS
+
+- Intégration de contenu en fonction d'une maquette
+- Implémentation d'une interface responsive
+
+L'intégration du site a été réalisée en HTML5 et CSS3, sans Framework.  
+La maquette version _Desktop_ est disponible [ici](supply/_img_README/desktop.png) et la version _Mobile_ [ici](supply/_img_README/phone.png)
+
+***
 
 - [1. Reservia](#1-reservia)
-  - [1.1. Découpage sémantique du site](#11-découpage-sémantique-du-site)
-  - [1.2. Gestion de versions et Workflow](#12-gestion-de-versions-et-workflow)
-  - [1.3. Breakpoints](#13-breakpoints)
-  - [1.4. Mise en page](#14-mise-en-page)
-  - [1.5. Optimisation](#15-optimisation)
-    - [1.5.1. Traitement des dépendances](#151-traitement-des-dépendances)
-    - [1.5.2. Pré-chargement](#152-pré-chargement)
-    - [1.5.3. Traitement des images](#153-traitement-des-images)
-  - [1.6. SEO](#16-seo)
-    - [1.6.1. Favicon](#161-favicon)
-    - [1.6.2. Open Graph](#162-open-graph)
-    - [1.6.3. Twitter Card](#163-twitter-card)
-  - [1.7. 1.0.7 Matériel utilisé](#17-107-matériel-utilisé)
-    - [1.7.1. Editeur de code](#171-editeur-de-code)
-    - [1.7.2. Navigateurs](#172-navigateurs)
-    - [1.7.3. Edition et retouche d'images](#173-edition-et-retouche-dimages)
+  - [1.1. Transformer une maquette en site Web avec HTML et CSS](#11-transformer-une-maquette-en-site-web-avec-html-et-css)
+    - [1.1.1. Découpage sémantique du site](#111-découpage-sémantique-du-site)
+    - [1.1.2. Gestion de versions et Workflow](#112-gestion-de-versions-et-workflow)
+    - [1.1.3. Breakpoints](#113-breakpoints)
+    - [1.1.4. Mise en page](#114-mise-en-page)
+    - [1.1.5. Optimisation](#115-optimisation)
+      - [1.1.5.1. Traitement des dépendances](#1151-traitement-des-dépendances)
+      - [1.1.5.2. Pré-chargement](#1152-pré-chargement)
+      - [1.1.5.3. Traitement des images](#1153-traitement-des-images)
+    - [1.1.6. SEO](#116-seo)
+      - [1.1.6.1. Favicon](#1161-favicon)
+      - [1.1.6.2. Open Graph](#1162-open-graph)
+      - [1.1.6.3. Twitter Card](#1163-twitter-card)
+    - [1.1.7. Matériel utilisé](#117-matériel-utilisé)
+      - [1.1.7.1. Editeur de code](#1171-editeur-de-code)
+      - [1.1.7.2. Navigateurs](#1172-navigateurs)
+      - [1.1.7.3. Edition et retouche d'images](#1173-edition-et-retouche-dimages)
 
-## 1.1. Découpage sémantique du site
+***
+
+### 1.1.1. Découpage sémantique du site
 
 Le site a été decoupé de la façon suivante :
 
@@ -38,19 +55,21 @@ Grâce à l'outil de vérification de code HTML du [W3C](https://validator.w3.or
 
 ![Heading level](supply/_img_README/heading-level.png)
 
-## 1.2. Gestion de versions et Workflow
+***
 
-<img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/><img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+### 1.1.2. Gestion de versions et Workflow
 
-Les versions du site effectuées grâce à ***GIT*** sont hébergées sur [***GitHub***](https://github.com/).
+Les versions du site effectuées grâce à **_GIT_** sont hébergées sur [**_GitHub_**](https://github.com/).
 
-Le plugin ***Git Flow*** a facilité le découpage des tâches grâce à son modèle de branches.  
+Le plugin **_Git Flow_** a facilité le découpage des tâches grâce à son modèle de branches.  
 Une branche de développement particulère (_`feature`_) a été dédiée à chaque étape et fonctionnalité du site à partir de la _Time line_ `develop`.  
 Après validation, une version taggée `v0.0.0` est publiée sur la branche `main` et mise en ligne (_`release`_).
 
-L'interface graphique [GitKraken](https://www.gitkraken.com/) a facilité l'utilisation  de ***GIT*** et ***Git Flow***.
+L'interface graphique [GitKraken](https://www.gitkraken.com/) a facilité l'utilisation de **_GIT_** et **_Git Flow_**.
 
-## 1.3. Breakpoints
+***
+
+### 1.1.3. Breakpoints
 
 ![Responsive logo](supply/_img_README/responsive-logo.png)
 
@@ -62,17 +81,20 @@ C'est ensuite le visuel du site qui dictera l'adaptation du site jusqu'à attein
 Une adaptation a été prévue pour les écrans de très petites taille comme les _IPhone 5_ de 320px.
 
 _Pour résumer, voici les différents points de ruptures :_
+
 - 1366px
 - 1165px
 - 768px
 - 610px
 - 374px
 
-## 1.4. Mise en page
+***
+
+### 1.1.4. Mise en page
 
 La méthode **Flexbox** a été choisie pour assurer la disposition et l'adaptabilité des éléménts en fonction de la taille de l'écran _utilisateur_.
 
-Le premier défis était de dissocier le menu dont les éléménts doivent s'inverser  et adopter des comportements différents :
+Le premier défis était de dissocier le menu dont les éléménts doivent s'inverser et adopter des comportements différents :
 
 ![Menu version Desktop](supply/_img_README/menu1.png)
 
@@ -105,45 +127,48 @@ Les deux liens _Hébergements_ et _Activités_ tenues à l'écart dans une `<div
 
 ```css
 .nav {
-    flex-direction: column-reverse;
-    align-items: flex-end;
-    margin-bottom: 35px;
-  }
-  .menu {
-    width: 100%;
-    margin-top: 45px;
-  }
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  margin-bottom: 35px;
+}
+.menu {
+  width: 100%;
+  margin-top: 45px;
+}
 ```
 
-## 1.5. Optimisation
+***
 
-### 1.5.1. Traitement des dépendances
+### 1.1.5. Optimisation
+
+#### 1.1.5.1. Traitement des dépendances
 
 Les icônes du site proviennent de la bibliothèque [_Font Awesome_](https://img.shields.io/badge/gimp-5C5543?style=for-the-badge&logo=gimp&logoColor=white) et est hébergée en local afin d'assurer l'affichage même en cas d'indisponibilité du fournisseur.
 
-Le fichier all.css a été nettoyé grâce à l'outil ***Coverage*** de la console de developpement de Google chrome, pour ne garder que le CSS necessaire et l'en-tête comportant la license. Le code restant a été compressé. 
+Le fichier all.css a été nettoyé grâce à l'outil **_Coverage_** de la console de developpement de Google chrome, pour ne garder que le CSS necessaire et l'en-tête comportant la license. Le code restant a été compressé.
 Les _webfont_ non utilisées ont été supprimée.
 
 La police _"Raleway"_ provenant de [Google Fonts](https://fonts.google.com/specimen/Raleway) est aussi hébergée en local et seul les graissages 300, 400, 600 et 700 ont été consevés et utilisés.
 
-### 1.5.2. Pré-chargement
+#### 1.1.5.2. Pré-chargement
 
-Comme préconisé dans la [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload), le pré-chargement des ressources lourdes et appelées dans une feuille de style externe, permet un gain de temps au chargement et à l'affichage assurant une meilleure expérience utilisateur. 
+Comme préconisé dans la [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload), le pré-chargement des ressources lourdes et appelées dans une feuille de style externe, permet un gain de temps au chargement et à l'affichage assurant une meilleure expérience utilisateur.
 
-Ce principe a donc été appliqué aux _polices_ ***Font Awesome*** et ***Google***:
+Ce principe a donc été appliqué aux _polices_ **_Font Awesome_** et **_Google_**:
 
 ```html
-<!-- Pre-load-fonts -->
+ <!-- Pre-load-fonts -->
   <link rel="preload" href="fonts/raleway-v19-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/raleway-v19-latin-300.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/raleway-v19-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/raleway-v19-latin-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Pre-load-style -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="css/all.css" as="style">
 ```
 
-### 1.5.3. Traitement des images
-
-<img alt="Gimp" src="https://img.shields.io/badge/gimp-5C5543?style=for-the-badge&logo=gimp&logoColor=white"/>
+#### 1.1.5.3. Traitement des images
 
 Les Images sont redimensionnées avec _Gimp_ pour correspondre au mieux à l'affichage et compressée en mode _lossless_ sur le site [compressor.io](https://compressor.io/).
 
@@ -151,14 +176,16 @@ Pour les images pouvant encore être allégées, une version _Webp_ est mise à 
 
 ```html
 <picture>
-  <source type="image/webp" srcset="images/accommodation/hotel-du-port.webp">
-  <img src="images/accommodation/hotel-du-port.jpg" alt="Hôtel du port">
+  <source type="image/webp" srcset="images/accommodation/hotel-du-port.webp" />
+  <img src="images/accommodation/hotel-du-port.jpg" alt="Hôtel du port" />
 </picture>
 ```
 
-## 1.6. SEO
+***
 
-### 1.6.1. Favicon
+### 1.1.6. SEO
+
+#### 1.1.6.1. Favicon
 
 Après avoir créé un icône issu du logo, un jeu de _Favicons_ compatibles tout supports a été géneré sur le site [_realfavicongenerator.net_](https://realfavicongenerator.net/)
 
@@ -186,7 +213,7 @@ Puis le code HTML suivant inséré entre les balises `<head>`:
 
 Les différents icônes générés sont stockés dans le repertoire `icons`
 
-### 1.6.2. Open Graph
+#### 1.1.6.2. Open Graph
 
 Création de la vignette publicitaire du site apparaissant sur **Facebook** à l'aide de la documentation [developers.facebook.com](https://developers.facebook.com/docs/sharing/webmasters#markup)
 
@@ -200,15 +227,17 @@ Avec le code suivant :
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://remymerienne.github.io/RemyMerienne_2_18052021" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_README/valise-open-graph.jpg" />
+  <meta property="og:image"
+    content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_OG-TC/valise-open-graph.jpg" />
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:width" content="1060" />
   <meta property="og:image:height" content="1060" />
   <meta property="og:image:alt" content="La valise est prête" />
-  <meta property="og:description" content="Reservia est le site dont vous avez besoin pour trouver votre hébergement ainsi que les activités incontournables pour vos prochaines vacances" />
+  <meta property="og:description"
+    content="Reservia est le site dont vous avez besoin pour trouver votre hébergement ainsi que les activités incontournables pour vos prochaines vacances" />
 ```
 
-### 1.6.3. Twitter Card
+#### 1.1.6.3. Twitter Card
 
 Création de la vignette publicitaire du site apparaissant sur **Twitter** avec de la documentation [developer.twitter.com](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
 
@@ -217,110 +246,39 @@ Création de la vignette publicitaire du site apparaissant sur **Twitter** avec 
 Avec le code suivant :
 
 ```html
-<!-- Twitter Card data -->
+ <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="https://remymerienne.github.io/RemyMerienne_2_18052021">
   <meta name="twitter:title" content="Où irez-vous pour vos prochaines vacances ?">
-  <meta name="twitter:description" content="Reservia est le site dont vous avez besoin pour trouver votre hébergement ainsi que les activités incontournables pour vos prochaines vacances">
+  <meta name="twitter:description"
+    content="Reservia est le site dont vous avez besoin pour trouver votre hébergement ainsi que les activités incontournables pour vos prochaines vacances">
   <meta name="twitter:creator" content="@pixabay-stux">
-  <meta name="twitter:image" content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_README/valise-t-c.jpg">
+  <meta name="twitter:image"
+    content="https://remymerienne.github.io/RemyMerienne_2_18052021/supply/_img_OG-TC/valise-t-c.jpg">
 ```
 
-## 1.7. 1.0.7 Matériel utilisé
+***
 
-### 1.7.1. Editeur de code
+### 1.1.7. Matériel utilisé
 
-- [***Visual Studio Code***](https://code.visualstudio.com/)
+#### 1.1.7.1. Editeur de code
+
+- [**_Visual Studio Code_**](https://code.visualstudio.com/)
 
 Avec les plugins suivant :
 
 ![Plugin VSC](supply/_img_README/plugin_vsc.png)
 
-Mon fichier de configuration :
+#### 1.1.7.2. Navigateurs
 
-```json
-// Config-VSC-Rémy Merienne
-{
-  "workbench.startupEditor": "none",
-  "workbench.editor.untitled.hint": "hidden",
+- [**_Google Chrome_**](https://www.google.fr/chrome/)
 
-  "editor.fontSize": 14,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 100,
-  "editor.detectIndentation": false,
-
-  "security.workspace.trust.untrustedFiles": "open",
-
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
-
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-
-  "liveServer.settings.donotShowInfoMsg": true,
-
-  "better-comments.tags": [{
-      "tag": "!",
-      "color": "#FF2D00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#ff00ea",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#FF8C00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "+",
-      "color": "#00EEFF",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ]
-}
-```
-
-### 1.7.2. Navigateurs
-
-- [***Google Chrome***](https://www.google.fr/chrome/)
-
-- [***Firefox***](https://www.mozilla.org/fr/firefox/new/)
+- [**_Firefox_**](https://www.mozilla.org/fr/firefox/new/)
 
 _Avec leurs outils de développements respectifs_
 
-### 1.7.3. Edition et retouche d'images
+#### 1.1.7.3. Edition et retouche d'images
 
-<img alt="Gimp" src="https://img.shields.io/badge/gimp-5C5543?style=for-the-badge&logo=gimp&logoColor=white"/>
-
-- [***Gimp***](https://www.gimp.org/downloads/)
+- [**_Gimp_**](https://www.gimp.org/downloads/)
 
 ***
