@@ -2,6 +2,11 @@
 
 Projet N°2 du parcours _Développeur Front-End_ [OpenClassrooms](https://openclassrooms.com/fr/).
 
+RESERVIA est un site de recherche d'hébergements et d'activités pour planifier ses vacances dans la ville de son choix.
+
+Lien vers le site : 
+[*Reservia*](https://remymerienne.github.io/RemyMerienne_2_18052021/)
+
 <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
 
 <img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/><img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>![GitKraken](https://img.shields.io/badge/GitKraken-179287?style=for-the-badge&logo=GitKraken&logoColor=white)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
